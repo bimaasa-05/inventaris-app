@@ -135,7 +135,6 @@ global $conn;
           <div class="form-group">
             <label>ID Barang</label>
             <input type="text" class="form-control" name="id_barang" id="input_id_barang">
-            <div id="tampil_nama_barang" style="margin-top: 5px; font-weight: bold;"></div>
           </div>
           <div class="form-group">
             <label>Jumlah</label>
@@ -153,7 +152,6 @@ global $conn;
           <div class="form-group">
             <label>User ID</label>
             <input type="text" class="form-control" name="id_user" id="input_id_user">
-            <div id="tampil_nama_user" style="margin-top: 5px; font-weight: bold;"></div>
           </div>
           <div class="modal-footer">
             <button type="submit" class="btn btn-primary"> Save </button>
