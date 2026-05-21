@@ -128,9 +128,14 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] != "login") {
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
+          <li>
+            <a href="index.php">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            </a>
+          </li>
           <li class="active treeview menu-open">
             <a href="#">
-              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <i class="fa fa-bars"></i> <span>Menu</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>

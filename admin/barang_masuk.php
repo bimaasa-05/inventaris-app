@@ -20,7 +20,7 @@ global $conn;
   <section class="content">
     <div class="box box-primary">
       <div class="box-header">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah-barang-masuk"><i class="glyphicon glyphicon-plus"></i> Tambah
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah-barang-masuk"><i class="glyphicon glyphicon-plus"></i> Tambah Data
 
         </button>
       </div>
@@ -30,29 +30,31 @@ global $conn;
             <tr>
               <th>NO</th>
               <th>TANGGAL</th>
-              <th>ID BARANG</th>
+              <th>NAMA BARANG</th>
               <th>JUMLAH</th>
               <th>KETERANGAN</th>
-              <th>USER ID</th>
+              <th>NAMA USER</th>
               <th>OPSI</th>
             </tr>
           </thead>
           <tbody>
             <?php
+            // Query untuk mengambil data barang masuk beserta nama barang dan nama user  
             $dt_masuk = mysqli_query($conn, "SELECT barang_masuk.*, barang.nama_barang, users.nama_lengkap 
-                                             FROM barang_masuk 
-                                             LEFT JOIN barang ON barang_masuk.id_barang = barang.id_barang 
-                                             LEFT JOIN users ON barang_masuk.id_user = users.id_user");
-            $no = 1;
-            while ($masuk = mysqli_fetch_array($dt_masuk)) { ?>
+              FROM barang_masuk 
+             LEFT JOIN barang ON barang_masuk.id_barang = barang.id_barang 
+             LEFT JOIN users ON barang_masuk.id_user = users.id_user");
+            while ($masuk = mysqli_fetch_array($dt_masuk)) {
+              $no = 1;
+            ?>
               <tr>
                 <td><?php echo $no++; ?></td>
 
                 <td><?php echo $masuk['tanggal']; ?></td>
-                <td><?php echo $masuk['nama_barang']; ?></td>
+                <td><?php echo $masuk['nama_barang'] ? $masuk['nama_barang'] : "barang tidak ditemukan"; ?></td>
                 <td><?php echo $masuk['jumlah']; ?></td>
                 <td><?php echo $masuk['keterangan']; ?></td>
-                <td><?php echo $masuk['nama_lengkap']; ?></td>
+                <td><?php echo $masuk['nama_lengkap'] ? $masuk['nama_lengkap'] : "user tidak ditemukan"; ?></td>
                 <td>
                   <button type="button" class="btn btn-xs btn-warning" title="Edit" data-toggle="modal" data-target="#edit-barang-masuk<?php echo $masuk['id_masuk']; ?>">
                     <i class="glyphicon glyphicon-edit"></i>
@@ -92,8 +94,7 @@ global $conn;
                             </div>
                             <div class="form-group">
                               <label>User ID</label>
-                              <input type="text" class="form-control" name="id_user" id="edit_id_user<?php echo $masuk['id_masuk']; ?>" value="<?php echo ($masuk['id_user']); ?>" onkeyup="cekUserEdit('<?php echo $masuk['id_masuk']; ?>')">
-                              <div id="tampil_nama_user_edit<?php echo $masuk['id_masuk']; ?>" style="margin-top: 5px; font-weight: bold;"></div>
+                              <input type="text" class="form-control" name="id_user" value="<?php echo ($masuk['id_user']); ?>">
                             </div>
                             <div class="modal-footer">
                               <button type="submit" class="btn btn-primary"> Update </button>

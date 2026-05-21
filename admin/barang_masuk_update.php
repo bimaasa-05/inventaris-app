@@ -4,7 +4,7 @@ global $conn;
 include "../config/koneksi.php";
 
 //Mengambil data yang dikirim dari modal tambah data pelanggan 
-$MasukID = $_POST['id_masuk'];
+$MasukID = $_POST['id_barang_masuk'];
 $Tanggal = $_POST['tanggal'];
 $BarangID = $_POST['id_barang'];
 $Jumlah = $_POST['jumlah'];
