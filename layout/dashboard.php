@@ -100,10 +100,11 @@ mysqli_query($conn, "SELECT * FROM users");
       <!-- /.col -->
     </div>
     <!-- /.row -->
-
-    <!-- Main row -->
-    <!-- /.row -->
-  </section>
-  <!-- /.content -->
+</div>
+<!-- Main row -->
+<!-- /.row -->
+</section>
+<!-- /.content -->
+</div>
 </div>
 <!-- /.content-wrapper -->
