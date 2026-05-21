@@ -23,7 +23,7 @@ global $conn;
   <section class="content">
     <div class="box box-primary">
       <div class="box-header">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah-supplier"><i class="glyphicon glyphicon-plus"></i> Tambah
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah-supplier"><i class="glyphicon glyphicon-plus"></i> Tambah Data
 
         </button>
       </div>
