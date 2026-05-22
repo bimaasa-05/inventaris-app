@@ -117,51 +117,52 @@ global $conn;
       </div>
     </div>
   </section>
-</div>
-</div>
-<div class="modal fade" id="tambah-barang-masuk">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Tambah Data Barang Masuk</h4>
-      </div>
-      <form action="barang_masuk_proses.php" method="POST">
-        <div class="modal-body">
-          <div class="form-group">
-            <label>Tanggal</label>
-            <input type="date" class="form-control" name="tanggal">
-          </div>
-          <div class="form-group">
-            <label>ID Barang</label>
-            <input type="text" class="form-control" name="id_barang" id="input_id_barang">
-          </div>
-          <div class="form-group">
-            <label>Jumlah</label>
-            <input type="number" class="form-control" name="jumlah">
-          </div>
-          <div class="form-group">
-            <label>Keterangan</label>
-            <select class="form-control" name="keterangan">
-              <option value="Sedang dikemas">Sedang dikemas</option>
-              <option value="Dalam Perjalanan">Dalam Perjalanan</option>
-              <option value="Siap Antar">Siap Antar</option>
-              <option value="Sudah diterima">Sudah diterima</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>User ID</label>
-            <input type="text" class="form-control" name="id_user" id="input_id_user">
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary"> Save </button>
-          </div>
+
+  <div class="modal fade" id="tambah-barang-masuk">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Tambah Data Barang Masuk</h4>
         </div>
-      </form>
+        <form action="barang_masuk_proses.php" method="POST">
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Tanggal</label>
+              <input type="date" class="form-control" name="tanggal">
+            </div>
+            <div class="form-group">
+              <label>ID Barang</label>
+              <input type="text" class="form-control" name="id_barang" id="input_id_barang">
+            </div>
+            <div class="form-group">
+              <label>Jumlah</label>
+              <input type="number" class="form-control" name="jumlah">
+            </div>
+            <div class="form-group">
+              <label>Keterangan</label>
+              <select class="form-control" name="keterangan">
+                <option value="Sedang dikemas">Sedang dikemas</option>
+                <option value="Dalam Perjalanan">Dalam Perjalanan</option>
+                <option value="Siap Antar">Siap Antar</option>
+                <option value="Sudah diterima">Sudah diterima</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>User ID</label>
+              <input type="text" class="form-control" name="id_user" id="input_id_user">
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary"> Save </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
 <?php
 
 include "../layout/footer.php";

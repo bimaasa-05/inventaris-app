@@ -180,17 +180,14 @@ global $conn;
         </div>
       </form>
     </div>
-    <!-- /.modal-content -->
   </div>
-  <!-- /.modal-dialog -->
-</div>
-<!-- /.modal -->
+  <!-- /.modal -->
 
-<?php
+  <?php
 
-include "../layout/footer.php";
+  include "../layout/footer.php";
 
-?>
-</body>
+  ?>
+  </body>
 
-</html>
+  </html>

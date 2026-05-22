@@ -135,17 +135,13 @@ global $conn;
         </div>
       </form>
     </div>
+    <?php
+
+    include "../layout/footer.php";
+
+    ?>
     <!-- /.modal-content -->
-  </div>
-  <!-- /.modal-dialog -->
-</div>
-<!-- /.modal -->
 
-<?php
+    </body>
 
-include "../layout/footer.php";
-
-?>
-</body>
-
-</html>
+    </html>

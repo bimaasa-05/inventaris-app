@@ -147,7 +147,7 @@ global $conn;
                     <div class="form-group">
                         <label>Tujuan</label>
                         <input type="text" class="form-control" name="tujuan">
-                    </div>
+                    </div>  
                     <div class="form-group">
                         <label>Keterangan</label>
                         <select class="form-control" name="keterangan">
@@ -169,6 +169,8 @@ global $conn;
         </div>
     </div>
 </div>
+
+
 <?php
 
 include "../layout/footer.php";

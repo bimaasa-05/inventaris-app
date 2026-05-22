@@ -17,7 +17,7 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] != "login") {
   <title>AdminLTE 2 | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="../assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -91,9 +91,7 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] != "login") {
               </ul>
             </li>
             <!-- Control Sidebar Toggle Button -->
-            <li>
-              <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-            </li>
+
           </ul>
         </div>
 
@@ -146,8 +144,8 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] != "login") {
               <li><a href="../admin/peminjaman.php"><i class="fa fa-money"></i> Pemimjaman</a></li>
               <li><a href="../admin/barang_masuk.php"><i class="fa fa-plus"></i> Barang Masuk</a></li>
               <li><a href="../admin/barang_keluar.php"><i class="fa fa-minus"></i>Barang Keluar</a></li>
-              <li><a href="../admin/laporan.php"><i class="fa fa-book"></i> Laporan</a></li>
               <li><a href="../admin/ganti_password.php"><i class="fa fa-key"></i>Ganti Password</a></li>
+              <li><a href="../admin/laporan.php"><i class="fa fa-book"></i> Laporan</a></li>
               <li><a href="../admin/logout.php"><i class="fa fa-sign-out"></i>Logout</a></li>
             </ul>
           </li>

@@ -95,7 +95,7 @@ mysqli_query($conn, "SELECT * FROM users");
           </div>
           <!-- /.info-box-content -->
         </div>
-        <!-- /.info-box --> 
+        <!-- /.info-box -->
       </div>
       <!-- /.col -->
     </div>
@@ -105,6 +105,4 @@ mysqli_query($conn, "SELECT * FROM users");
 <!-- /.row -->
 </section>
 <!-- /.content -->
-</div>
-</div>
 <!-- /.content-wrapper -->
