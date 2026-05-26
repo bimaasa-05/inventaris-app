@@ -80,16 +80,33 @@ mysqli_query($conn, "SELECT * FROM users");
         <!-- /.info-box -->
       </div>
       <!-- /.col -->
+
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
           <span class="info-box-icon bg-yellow"><i class="fa fa-minus-circle"></i></span>
-
           <div class="info-box-content">
             <span class="info-box-text">Barang Keluar</span>
             <span class="info-box-number">
               <?php
               $barang_keluar = mysqli_query($conn, "SELECT * FROM barang_keluar");
               echo mysqli_num_rows($barang_keluar);
+              ?>
+            </span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-green"><i class="fa fa-money"></i></span>
+
+          <div class="info-box-content">
+            <span class="info-box-text">Peminjaman</span>
+            <span class="info-box-number">
+              <?php
+              $tb_peminjaman = mysqli_query($conn, "SELECT * FROM peminjaman");
+              echo mysqli_num_rows($tb_peminjaman);
               ?>
             </span>
           </div>
@@ -105,4 +122,5 @@ mysqli_query($conn, "SELECT * FROM users");
 <!-- /.row -->
 </section>
 <!-- /.content -->
+</div>
 <!-- /.content-wrapper -->

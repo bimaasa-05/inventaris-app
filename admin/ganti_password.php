@@ -9,7 +9,7 @@ global $conn;
         <h1>
             Ganti Password
             <small>
-                Aplikasi Kasir Sederhana
+                Aplikasi Inventaris Barang Sederhana
             </small>
         </h1>
         <ol class="breadcrumb">

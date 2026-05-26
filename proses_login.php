@@ -7,7 +7,7 @@ session_start();
 
 // Menangkap data yang dikirim dari form
 $username = mysqli_real_escape_string($conn, $_POST['username']);
-$password = $_POST['password']; // Jika password di database di-hash, gunakan password_verify
+$password = md5($_POST['password']); // Jika password di database di-hash, gunakan password_verify
 
 // Menyeleksi data user dengan username yang sesuai
 $login = mysqli_query($conn, "SELECT * FROM users WHERE username='$username'");

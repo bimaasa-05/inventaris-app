@@ -78,8 +78,8 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] != "login") {
                   <img src="../assets/dist/img/avatar5.png" class="img-circle" alt="User Image">
 
                   <p>
-                    <?php echo $_SESSION['nama_lengkap']; ?> - <?php echo $_SESSION['level']; ?>
-                    <small>Web Developer Full Stack</small>
+                    <?php echo $_SESSION['nama_lengkap']; ?> || <span><?php echo $_SESSION['level']; ?></span>
+                    <small>Web Devepment</small>
                   </p>
                 </li>
                 <!-- Menu Footer-->
@@ -126,12 +126,12 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] != "login") {
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
-          <li>
+          <li class="active">
             <a href="index.php">
               <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             </a>
           </li>
-          <li class="active treeview menu-open">
+          <li class="treeview">
             <a href="#">
               <i class="fa fa-bars"></i> <span>Menu</span>
               <span class="pull-right-container">
@@ -145,8 +145,20 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] != "login") {
               <li><a href="../admin/barang_masuk.php"><i class="fa fa-plus"></i> Barang Masuk</a></li>
               <li><a href="../admin/barang_keluar.php"><i class="fa fa-minus"></i>Barang Keluar</a></li>
               <li><a href="../admin/ganti_password.php"><i class="fa fa-key"></i>Ganti Password</a></li>
-              <li><a href="../admin/laporan.php"><i class="fa fa-book"></i> Laporan</a></li>
-              <li><a href="../admin/logout.php"><i class="fa fa-sign-out"></i>Logout</a></li>
+
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-book"></i> <span>Menu Laporan</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="../admin/laporan_barang.php"><i class="fa fa-file-text-o"></i> Laporan Barang & Stok</a></li>
+              <li><a href="../admin/laporan_masuk.php"><i class="fa fa-file-text-o"></i> Laporan Barang Masuk</a></li>
+              <li><a href="../admin/laporan_keluar.php"><i class="fa fa-file-text-o"></i> Laporan Barang Keluar</a></li>
             </ul>
           </li>
         </ul>

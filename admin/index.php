@@ -7,8 +7,9 @@
     include "../layout/dashboard.php";
 
     ?>
-        
-        <?php
+    </div>
+    </div>
+    <?php
 
-        include "../layout/footer.php";
-        ?>
+    include "../layout/footer.php";
+    ?>

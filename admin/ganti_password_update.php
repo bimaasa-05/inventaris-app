@@ -9,7 +9,7 @@ $NamaLengkap = $_POST['nama_lengkap'];
 $Username = $_POST['username'];
 $Password = $_POST['password'];
 $Role = $_POST['level'];
-
+    
 $result = mysqli_query($conn, "UPDATE users set nama_lengkap='$NamaLengkap', username='$Username', password='$Password', level='$Role' WHERE id_user = '$UserID'");
 
 if ($result) {
